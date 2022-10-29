@@ -1,7 +1,7 @@
 import Underlined from "./Underlined";
 import styles from '../styles/Navigation.module.css'
 
-export default function Navigation() {
+export default function Header() {
     return <header className={styles.container}>
         <ul>
             <li>
