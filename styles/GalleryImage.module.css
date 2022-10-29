@@ -5,10 +5,6 @@
     vertical-align: bottom;
 }
 
-.container {
-    /*flex-shrink: 1; */
-}
-
 @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
     .image {
         width: 100%;
