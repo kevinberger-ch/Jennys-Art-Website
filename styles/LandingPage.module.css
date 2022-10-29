@@ -12,4 +12,14 @@
 
 .opening h1, .opening h2 {
     text-align: center;
+    margin: 0;
+    padding: 0
+}
+
+.opening h1 {
+    font-size: 8rem;
+}
+
+.opening h2 {
+    font-size: 3rem;
 }
