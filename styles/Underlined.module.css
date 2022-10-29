@@ -1,0 +1,10 @@
+.container {
+    width: 130px;
+    display: block;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    margin-top: -10px;
+}

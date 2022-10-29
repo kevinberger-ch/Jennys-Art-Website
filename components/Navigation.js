@@ -1,22 +1,22 @@
-import Link from "next/link";
 import Underlined from "./Underlined";
+import styles from '../styles/Navigation.module.css'
 
 export default function Navigation() {
-    return <header>
+    return <header className={styles.container}>
         <ul>
             <li>
                 <Underlined>
-                    <Link href="/about">About</Link>
+                    <a className={styles.link} href="/about">About</a>
                 </Underlined>
             </li>
             <li>
                 <Underlined>
-                    <Link href="/gallery">Gallery</Link>
+                    <a className={styles.link} href="/gallery">Gallery</a>
                 </Underlined>
             </li>
             <li>
                 <Underlined>
-                    <Link href="/contact">Contact</Link>
+                    <a className={styles.link} href="/contact">Contact</a>
                 </Underlined>
             </li>
         </ul>
