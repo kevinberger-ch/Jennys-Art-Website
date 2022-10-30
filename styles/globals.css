@@ -23,3 +23,8 @@ html, body, .website {
 ::-webkit-scrollbar-thumb {
     background: #864efc;
 }
+
+::selection {
+    color: white;
+    background: #864efc;
+}
