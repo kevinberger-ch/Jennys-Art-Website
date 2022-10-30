@@ -3,6 +3,7 @@ import styles from '../styles/Navigation.module.css'
 
 export default function Header() {
     return <header className={styles.container}>
+        <img className={styles.menu} src="/menu.png" />
         <nav>
             <ul>
                 <li>
