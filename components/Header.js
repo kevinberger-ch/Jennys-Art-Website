@@ -6,11 +6,14 @@ export default function Header() {
         <nav>
             <ul>
                 <li>
-                    <Underlined width="120px">
-                        <a className={styles.link} href="/about">About</a>
+                    <Underlined width="100px">
+                        <a className={styles.link} href="/">Home</a>
                     </Underlined>
                 </li>
                 <li>
+                    <Underlined width="120px">
+                        <a className={styles.link} href="/about">About</a>
+                    </Underlined>
                     <Underlined width="130px">
                         <a className={styles.link} href="/gallery">Gallery</a>
                     </Underlined>
