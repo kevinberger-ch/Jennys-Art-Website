@@ -4,7 +4,7 @@ import Underlined from "./Underlined";
 
 export default function Footer() {
     return <footer className={styles.container}>
-        <Underlined width="190px">
+        <Underlined width="170px">
             <a className={navigationStyles.link} href="/impressum">Impressum</a>
         </Underlined>
     </footer>
