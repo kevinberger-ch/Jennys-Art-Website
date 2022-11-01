@@ -74,11 +74,18 @@ export default function BasicForm({inputs, submitText, onValidSubmit, defaultDat
 
         {inputs.map(input => {
             return (<fieldset className={styles.field} key={input.name}>
-                <label className={styles.label}>{input.required && <span className={styles.required}>*</span>} {input.label}</label>
-                <input
-                    value={input.addressField ? (formData["address"] && formData["address"][input.name]) : formData[input.name]}
-                    type={input.inputType} placeholder={input.placeholder} name={input.name}
-                    onChange={(e) => input.addressField ? handleAddressChanged(e) : handleChange(e)}/>
+                <label className={styles.label}>{input.required &&
+                    <span className={styles.required}>*</span>} {input.label}</label>
+                {input.inputType === "textarea" ? (
+                    <textarea
+                        value={input.addressField ? (formData["address"] && formData["address"][input.name]) : formData[input.name]}
+                        type={input.inputType} placeholder={input.placeholder} name={input.name}
+                        onChange={(e) => input.addressField ? handleAddressChanged(e) : handleChange(e)}/>) : (
+                    <input
+                        value={input.addressField ? (formData["address"] && formData["address"][input.name]) : formData[input.name]}
+                        type={input.inputType} placeholder={input.placeholder} name={input.name}
+                        onChange={(e) => input.addressField ? handleAddressChanged(e) : handleChange(e)}/>
+                )}
 
                 {errors[input.name] && <span className={styles.error_alert}>{errors[input.name]}</span>}
             </fieldset>)

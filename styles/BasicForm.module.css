@@ -6,9 +6,11 @@
     font-size: 1.2rem;
 }
 
-
-.form {
-
+.error_alert {
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    display: block;
+    color: red;
 }
 
 .primary_button {
@@ -21,14 +23,19 @@
 .field {
     border: none;
     padding: 0;
-    margin: 0 0 0.5rem;
+    margin: 0 0 0.8rem;
 }
 
-.field input {
+.field input, .field textarea {
     display: block;
     font-size: 1rem;
     margin-top: 5px;
     border: 2px solid #864efc;
     padding: 8px;
     width: -webkit-fill-available;
+    resize: vertical;
+}
+
+.field textarea {
+    min-height: 4rem;
 }
