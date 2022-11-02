@@ -10,7 +10,7 @@ export default function Header() {
     }
 
     return <header className={styles.container}>
-        <img className={styles.menu} src="/menu.png" onClick={onMenuClick}/>
+        <img className={styles.menu} src={isOpen ? "./cross.png" : "./menu.png"} onClick={onMenuClick}/>
         <nav style={isOpen ? {display: "block"} : {display: "none"}}>
             <ul>
                 <li>
