@@ -72,7 +72,7 @@ export default function BasicForm({inputs, submitText, onValidSubmit, defaultDat
         setFormData({})
     }
 
-    return (<form className={styles.form} onSubmit={validateAndSubmit}>
+    return (<form onSubmit={validateAndSubmit}>
 
         {inputs.map(input => {
             return (<fieldset className={styles.field} key={input.name}>
