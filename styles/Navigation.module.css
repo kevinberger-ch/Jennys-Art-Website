@@ -31,16 +31,13 @@
         display: block;
     }
 
-    .container nav {
-        margin-top: 1rem;
+    .containerOpen {
         position: absolute;
         left: 0;
         background-color: #ceb2ff;
         right: 0;
-        bottom: 0;
-        top: 60px;
-        padding-bottom: 1rem;
-        border-bottom: 2px solid black;
+        top: 0;
+        height: calc(var(--vh, 1vh) * 100);;
     }
 
     .container span {

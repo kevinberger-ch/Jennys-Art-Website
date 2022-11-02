@@ -9,7 +9,7 @@ export default function Header() {
         setIsOpen(newIsOpen)
     }
 
-    return <header className={styles.container}>
+    return <header className={`${styles.container} ${isOpen ? styles.containerOpen : ''}`}>
         <img className={styles.menu} src={isOpen ? "./cross.png" : "./menu.png"} onClick={onMenuClick}/>
         <nav style={isOpen ? {display: "block"} : {display: "none"}}>
             <ul>
