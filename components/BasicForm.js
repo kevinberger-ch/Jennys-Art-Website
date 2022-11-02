@@ -59,6 +59,7 @@ export default function BasicForm({inputs, submitText, onValidSubmit, defaultDat
 
     function validateAndSubmit(e) {
         e.preventDefault()
+        setErrors([])
 
         const result = validate(formData, inputs);
 
@@ -68,6 +69,7 @@ export default function BasicForm({inputs, submitText, onValidSubmit, defaultDat
         }
 
         onValidSubmit(e, formData)
+        setFormData({})
     }
 
     return (<form className={styles.form} onSubmit={validateAndSubmit}>

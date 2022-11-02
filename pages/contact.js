@@ -1,6 +1,7 @@
 import styles from '../styles/ContactPage.module.css'
 import {useRouter} from "next/router";
 import BasicForm from "../components/BasicForm";
+import {useState} from "react";
 
 const baseInputs = [
     {
@@ -53,13 +54,16 @@ const baseInputs = [
 
 export default function ContactPage() {
     const router = useRouter();
+    const [message, setMessage] = useState("")
 
     async function onSubmit(e, formData) {
         // send contact form
+        setMessage("Sent succesfully :)")
 
     }
 
     return (<main className={styles.container}>
+        {message !== "" && <p className={styles.success}>{message}</p>}
         <BasicForm inputs={baseInputs} defaultData={{address: {}}}
                    submitText={"Send"} onValidSubmit={onSubmit}/>
     </main>)
