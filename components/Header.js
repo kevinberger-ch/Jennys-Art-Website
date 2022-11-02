@@ -4,13 +4,15 @@ import {useState} from "react";
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false)
+
     function onMenuClick() {
         const newIsOpen = !isOpen
         setIsOpen(newIsOpen)
     }
 
     return <header className={`${styles.container} ${isOpen ? styles.containerOpen : ''}`}>
-        <img className={styles.menu} src={isOpen ? "./cross.png" : "./menu.png"} onClick={onMenuClick} alt="menu button"></img>
+        <img className={styles.menu} src={isOpen ? "./cross.png" : "./menu.png"} onClick={onMenuClick}
+             alt="menu button"></img>
         <nav style={isOpen ? {display: "block"} : {display: "none"}}>
             <ul>
                 <li>
