@@ -6,10 +6,10 @@ import {useEffect} from "react";
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     document.title = "Jenny's Art";
+    document.documentElement.lang = "EN"
+
     let vh = window.innerHeight * 0.01;
-
     document.documentElement.style.setProperty('--vh', `${vh}px`);
-
     window.addEventListener('resize', () => {
       // We execute the same script as before
       let vh = window.innerHeight * 0.01;
@@ -21,11 +21,11 @@ function MyApp({ Component, pageProps }) {
 
 
 
-  return <section className="website">
+  return <div className="website">
     <Header />
     <Component {...pageProps} />
     <Footer />
-  </section>
+  </div>
 }
 
 export default MyApp
