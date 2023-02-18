@@ -1,0 +1,18 @@
+.container {
+    padding: 1rem;
+}
+
+.container h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.container p {
+    font-size: 1.1rem;
+}
+
+.content {
+    margin: 2rem auto auto;
+    width: fit-content;
+}
