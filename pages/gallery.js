@@ -7,10 +7,10 @@ export default function GalleryPage() {
 
     return <main className={styles.container}>
         <ul>
-        { images.map(image => {
-            return <li key={image}><GalleryImage src={"/gallery/" + image} /></li>
+            {images.map(image => {
+                return <li key={image}><GalleryImage src={"/gallery/" + image}/></li>
             })
-        }
+            }
         </ul>
     </main>
 }
