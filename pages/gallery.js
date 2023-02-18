@@ -8,7 +8,7 @@ export default function GalleryPage() {
     return <main className={styles.container}>
         <ul>
         { images.map(image => {
-            return <li><GalleryImage src={"/gallery/" + image} /></li>
+            return <li key={image}><GalleryImage src={"/gallery/" + image} /></li>
             })
         }
         </ul>
