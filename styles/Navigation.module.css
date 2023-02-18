@@ -1,11 +1,17 @@
 .container {
-
+    padding: 1rem;
 }
 
 .container ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container li {
+    display: inline;
 }
 
 .link {
