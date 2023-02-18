@@ -1,10 +1,17 @@
 import Underlined from "./Underlined";
 import styles from '../styles/Navigation.module.css'
+import {useState} from "react";
 
 export default function Header() {
+    const [isOpen, setIsOpen] = useState(false)
+    function onMenuClick() {
+        const newIsOpen = !isOpen
+        setIsOpen(newIsOpen)
+    }
+
     return <header className={styles.container}>
-        <img className={styles.menu} src="/menu.png" />
-        <nav>
+        <img className={styles.menu} src="/menu.png" onClick={onMenuClick}/>
+        <nav style={isOpen ? {display: "block"} : {display: "none"}}>
             <ul>
                 <li>
                     <Underlined width="80px">
