@@ -23,3 +23,20 @@
     display: block;
     font-size: 2rem;
 }
+
+.menu {
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .menu {
+        display: block;
+    }
+
+    .container nav {
+        display: none;
+    }
+}
