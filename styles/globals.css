@@ -8,4 +8,5 @@ html, body, .website {
 .website {
     display: grid;
     grid-template-rows: max-content 1fr max-content ;
+    background-color: #ceb2ff;
 }
