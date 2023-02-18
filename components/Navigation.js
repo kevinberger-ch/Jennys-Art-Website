@@ -1,16 +1,23 @@
 import Link from "next/link";
+import Underlined from "./Underlined";
 
 export default function Navigation() {
     return <header>
         <ul>
             <li>
-                <Link href="/about">About</Link>
+                <Underlined>
+                    <Link href="/about">About</Link>
+                </Underlined>
             </li>
             <li>
-                <Link href="/gallery">Gallery</Link>
+                <Underlined>
+                    <Link href="/gallery">Gallery</Link>
+                </Underlined>
             </li>
             <li>
-                <Link href="/contact">Contact</Link>
+                <Underlined>
+                    <Link href="/contact">Contact</Link>
+                </Underlined>
             </li>
         </ul>
     </header>
