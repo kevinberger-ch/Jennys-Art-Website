@@ -1,0 +1,18 @@
+.required {
+    color: red;
+}
+
+.form {
+
+}
+
+.field {
+    border: none;
+}
+
+.field input {
+    display: block;
+    margin-top: 5px;
+    border: 2px solid #864efc;
+    padding: 5px;
+}
