@@ -3,22 +3,24 @@ import styles from '../styles/Navigation.module.css'
 
 export default function Header() {
     return <header className={styles.container}>
-        <ul>
-            <li>
-                <Underlined width="120px">
-                    <a className={styles.link} href="/about">About</a>
-                </Underlined>
-            </li>
-            <li>
-                <Underlined width="130px">
-                    <a className={styles.link} href="/gallery">Gallery</a>
-                </Underlined>
-            </li>
-            <li>
-                <Underlined width="130px">
-                    <a className={styles.link} href="/contact">Contact</a>
-                </Underlined>
-            </li>
-        </ul>
+        <nav>
+            <ul>
+                <li>
+                    <Underlined width="120px">
+                        <a className={styles.link} href="/about">About</a>
+                    </Underlined>
+                </li>
+                <li>
+                    <Underlined width="130px">
+                        <a className={styles.link} href="/gallery">Gallery</a>
+                    </Underlined>
+                </li>
+                <li>
+                    <Underlined width="130px">
+                        <a className={styles.link} href="/contact">Contact</a>
+                    </Underlined>
+                </li>
+            </ul>
+        </nav>
     </header>
 }
