@@ -11,11 +11,11 @@ html, body, .website {
 h1 {
     letter-spacing: 5px;
     font-weight: 100;
-    font-family: 'Pirata One', cursive;
+    font-family: 'Pirata One', cursive !important;
 }
 
 a {
-    font-family: 'Waiting for the Sunrise', cursive;
+    font-family: 'Waiting for the Sunrise', cursive !important;
     font-weight: 600;
 }
 
