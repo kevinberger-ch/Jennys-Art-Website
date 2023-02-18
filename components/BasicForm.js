@@ -74,7 +74,7 @@ export default function BasicForm({inputs, submitText, onValidSubmit, defaultDat
 
         {inputs.map(input => {
             return (<fieldset className={styles.field} key={input.name}>
-                <label>{input.required && <span className={styles.required}>*</span>} {input.label}</label>
+                <label className={styles.label}>{input.required && <span className={styles.required}>*</span>} {input.label}</label>
                 <input
                     value={input.addressField ? (formData["address"] && formData["address"][input.name]) : formData[input.name]}
                     type={input.inputType} placeholder={input.placeholder} name={input.name}
