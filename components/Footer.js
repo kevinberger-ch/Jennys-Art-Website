@@ -3,8 +3,8 @@ import Underlined from "./Underlined";
 
 export default function Footer() {
     return <>
-        <Underlined>
-            <a className={navigationStyles.link} href="/about">Impressum</a>
+        <Underlined width="190px">
+            <a className={navigationStyles.link} href="/impressum">Impressum</a>
         </Underlined>
     </>
 }
