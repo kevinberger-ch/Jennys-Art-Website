@@ -15,9 +15,11 @@
 
 .primary_button {
     padding: 8px;
-    border: 2px solid #864efc;
+    border: 2px solid white;
     margin-top: 0.5rem;
     float: right;
+    background-color: #864efc;
+    color: white;
     cursor: pointer;
 }
 

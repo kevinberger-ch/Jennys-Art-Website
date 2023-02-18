@@ -19,6 +19,10 @@ a {
     font-weight: 600;
 }
 
+p, h2, input, textarea {
+    font-family: Arial, sans-serif;
+}
+
 .website {
     display: grid;
     grid-template-rows: max-content 1fr max-content;
